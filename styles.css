@@ -1,9 +1,26 @@
+:root{
+  --color-hover:rgba(17, 169, 245, 0.5);
+}
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+
 header, footer{
   font-family: "Anton SC", sans-serif;
 }
+
+/* bootstrap */
+.navbar-nav a:hover{
+  transition: all 0.5s ease-in;
+  background-color: var(--color-hover);
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+
+/* estilos propios */
