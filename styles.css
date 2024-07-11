@@ -37,6 +37,6 @@ header, footer{
 /* estilos propios */
 @media screen and (min-width:850px){
  .img-hero{
-  max-width: 900px;
+  max-width: 700px;
  }
 }
