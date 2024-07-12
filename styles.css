@@ -107,6 +107,10 @@ footer{
   background-color: var(--color-dark);
 }
 
+footer i:hover{
+  color:var(--color-dark);
+  background-color: var(--color-light);
+}
 /* Media Queries */
 @media screen and (max-width:400px){
   .conoceme{
