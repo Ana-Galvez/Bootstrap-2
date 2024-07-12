@@ -81,6 +81,16 @@ header, footer{
   max-width: 500px;
 }
 
+.link-contacto:hover{
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -ms-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  color:var(--color-dark);
+  background-color: var(--color-light);
+}
+
 footer{
   color:var(--color-light);
   background-color: var(--color-dark);
