@@ -92,7 +92,8 @@ footer{
     font-size: 80% !important;
   }
   .cliente-descripcion{
-    max-width: 200px;
+    width: 200px;
+    height: 100px;
     font-size: 0.8rem;
   }
 }
