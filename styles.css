@@ -81,6 +81,14 @@ header, footer{
   max-width: 500px;
 }
 
+.sector-contacto{
+  background-color: var(--color-dark);
+  height: 200px;
+}
+
+.contacto-arriba{
+  margin-top: -3rem;
+}
 .link-contacto:hover{
   transition: 0.5s all ease;
   -webkit-transition: 0.5s all ease;
@@ -105,6 +113,13 @@ footer{
     width: 200px;
     height: 100px;
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width:575px){
+  .contacto-arriba{
+    max-width: 400px;
+  
   }
 }
 
