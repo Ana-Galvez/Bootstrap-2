@@ -34,6 +34,17 @@ header, footer{
   -o-transition: all 0.5s ease-in;
 }
 
+.carousel-item{
+  height: 400px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231b1b32'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231b1b32'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
 /* estilos propios */
 .img-proyectos{
   transition: all 0.2s ease;
@@ -62,6 +73,14 @@ header, footer{
   /* visibility:visible; */
 }
 
+.img-testimonio{
+  width: 150px;
+}
+
+.cliente-descripcion{
+  max-width: 500px;
+}
+
 footer{
   color:var(--color-light);
   background-color: var(--color-dark);
@@ -75,11 +94,18 @@ footer{
   .conoceme{
     font-size: 1rem !important;
   }
+  .cliente-descripcion{
+    max-width: 300px;
+  }
 }
 
 @media screen and (max-width:400px){
   .conoceme{
     font-size: 80% !important;
+  }
+  .cliente-descripcion{
+    max-width: 200px;
+    font-size: 0.8rem;
   }
 }
 
