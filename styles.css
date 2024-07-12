@@ -88,6 +88,9 @@ header, footer{
 
 .contacto-arriba{
   margin-top: -3rem;
+  box-shadow: 2px 5px 9px 0px rgba(250,237,237,0.75);
+-webkit-box-shadow: 2px 5px 9px 0px rgba(250,237,237,0.75);
+-moz-box-shadow: 2px 5px 9px 0px rgba(250,237,237,0.75);
 }
 .link-contacto:hover{
   transition: 0.5s all ease;
