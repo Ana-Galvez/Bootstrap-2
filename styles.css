@@ -87,6 +87,16 @@ footer{
 }
 
 /* Media Queries */
+@media screen and (max-width:400px){
+  .conoceme{
+    font-size: 80% !important;
+  }
+  .cliente-descripcion{
+    max-width: 200px;
+    font-size: 0.8rem;
+  }
+}
+
 @media screen and (max-width:767px){
   .card{
     height: auto !important;
@@ -99,18 +109,14 @@ footer{
   }
 }
 
-@media screen and (max-width:400px){
-  .conoceme{
-    font-size: 80% !important;
-  }
-  .cliente-descripcion{
-    max-width: 200px;
-    font-size: 0.8rem;
-  }
-}
-
 @media screen and (min-width:850px){
  .img-hero{
     max-width: 700px;
+ }
+}
+
+@media screen and (min-width:1200px){
+ .cliente-descripcion{
+    max-width: 900px;
  }
 }
