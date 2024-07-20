@@ -1,392 +1,313 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Ana Galvez" />
-    <meta name="copyright" content="2024" />
-    <meta name="description" content="One Page con bootstrap" />
-    <meta name="keywords" content="html,css,bootstrap" />
-    <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon" />
-    <!-- link bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous" />
-    <!-- link iconos bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <!-- link google-fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap"
-      rel="stylesheet" />
-    <!-- link css -->
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Ana Galvez | Desarrollo Web</title>
-  </head>
-  <body class="bg-body-tertiary">
-    <!-- navbar -->
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="container-fluid text-center">
-          <a class="navbar-brand d-none d-md-block" href="#"><img
-              src="./img/icono.png" alt="icono" class="img-fluid" /></a>
-          <button
-            class="navbar-toggler border-0"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-md-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="index.html#sobremi">Sobre mí</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#proyectos">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"
-                  href="index.html#testimonios">Testimonios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#contacto">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <article class="mt-3 d-flex flex-column align-items-center">
-        <img
-          src="./img/desarrollador9.svg"
-          alt="mi foto"
-          class="img-fluid"
-          style="min-width: 100px" />
-        <h1>Hola, soy Ana</h1>
-        <p class="fs-4">Desarrollo sitios y aplicaciones web</p>
-      </article>
-      <article class="mt-5 d-flex justify-content-center">
-        <img
-          src="./img/hero-inferior.svg"
-          alt="imagen de hero"
-          class="img-fluid img-hero" />
-      </article>
 
-      <!-- Sobre mí -->
-      <div class="container-fluid bg-body-secondary" id="sobremi">
-        <article class="container py-5">
-          <h2 class="text-center">Conóceme</h2>
-          <p class="fs-5 conoceme">
-            Soy una entusiasta desarrolladora web en proceso de crecimiento
-            profesional. Apasionada por la tecnología y estoy comprometida con
-            aprender y dominar las herramientas fundamentales, no solo HTML, CSS
-            y JavaScript. También sé y sigo aprendiendo Node, Sql y React. Mi
-            enfoque actual se centra en adquirir experiencia práctica y expandir
-            mis habilidades en desarrollo frontend y backend. Soy una persona
-            detallista, proactiva, autodidacta y comunicativa, con una fuerte
-            motivación para convertir mis ideas en código funcional y estético.
-            Mi meta es contribuir activamente en proyectos que me permitan
-            aplicar y fortalecer mis conocimientos, mientras colaboro en equipos
-            dinámicos que me ayuden a crecer como profesional en este
-            emocionante campo tecnológico.
-          </p>
-        </article>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ana Galvez" />
+  <meta name="copyright" content="2024" />
+  <meta name="description" content="One Page con bootstrap" />
+  <meta name="keywords" content="html,css,bootstrap" />
+  <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon" />
+  <!-- link bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- link iconos bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- link google-fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet" />
+  <!-- link css -->
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Ana Galvez | Desarrollo Web</title>
+</head>
+
+<body class="bg-body-tertiary">
+  <!-- navbar -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-md bg-body-tertiary" role="navigation">
+      <div class="container-fluid text-center">
+        <a class="navbar-brand d-none d-md-block" href="#"><img src="./img/icono.png" alt="icono"
+            class="img-fluid" /></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-md-auto" role="list">
+            <li class="nav-item" role="listitem">
+              <a role="link" class="nav-link active" aria-current="page" href="index.html#sobremi">Sobre mí</a>
+            </li>
+            <li class="nav-item" role="listitem">
+              <a role="link" class="nav-link" href="index.html#proyectos">Proyectos</a>
+            </li>
+            <li role="link" class="nav-item" role="listitem">
+              <a class="nav-link" href="index.html#testimonios">Testimonios</a>
+            </li>
+            <li role="link" class="nav-item" role="listitem">
+              <a class="nav-link" href="index.html#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  </header>
+  <main>
+    <article class="mt-3 d-flex flex-column align-items-center">
+      <img src="./img/desarrollador9.svg" alt="mi foto" class="img-fluid" style="min-width: 100px" />
+      <h1 role="title">Hola, soy Ana</h1>
+      <p class="fs-4">Desarrollo sitios y aplicaciones web</p>
+    </article>
+    <article class="mt-5 d-flex justify-content-center">
+      <img src="./img/hero-inferior.svg" alt="imagen de hero" class="img-fluid img-hero" />
+    </article>
 
-      <!-- Cards -->
-      <article class="container mt-3 d-md-flex justify-content-center">
-        <div class="col-12 col-md-6 d-flex justify-content-center">
-          <div class="card text-center" style="width: 18rem; height: 25rem">
-            <div class="card-body">
-              <i
-                class="bi bi-laptop fs-1 text-success bg-black rounded-circle py-1 px-2"></i>
-              <h3 class="card-title">Desarrollo Web</h3>
-              <p class="card-text fs-5">
-                Me apasiona hacer sitios webs y aprender cada día más y más
-              </p>
-              <p class="badge text-bg-primary px-3 py-2">HTML</p>
-              <p class="badge text-bg-primary px-3 py-2">CSS</p>
-              <p class="badge text-bg-primary px-3 py-2">Bootstrap</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 d-flex justify-content-center">
-          <div class="card text-center" style="width: 18rem; height: 25rem">
-            <div class="card-body">
-              <i
-                class="bi bi-laptop fs-1 text-success bg-black rounded-circle py-1 px-2"></i>
-              <h3 class="card-title">Estudiante</h3>
-              <p class="card-text fs-5">
-                Siempre estudiando y mejorando para intentar saber lo último de
-                cada tecnología
-              </p>
-              <p class="badge text-bg-primary px-3 py-2">Codo a Codo</p>
-              <p class="badge text-bg-primary px-3 py-2">Argentina Programa</p>
-              <p class="badge text-bg-primary px-3 py-2">Autodidacta</p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Mis proyectos -->
-      <article id="proyectos" class="text-center">
-        <h2 class="mt-4">Mis Proyectos</h2>
-        <p class="fs-5">
-          Estos son mis proyectos, que de a poco van a ser más
+    <!-- Sobre mí -->
+    <div class="container-fluid bg-body-secondary" id="sobremi">
+      <article class="container py-5" role="article">
+        <h2 class="text-center">Conóceme</h2>
+        <p class="fs-5 conoceme">
+          Soy una entusiasta desarrolladora web en proceso de crecimiento
+          profesional. Apasionada por la tecnología y estoy comprometida con
+          aprender y dominar las herramientas fundamentales, no solo HTML, CSS
+          y JavaScript. También sé y sigo aprendiendo Node, Sql y React. Mi
+          enfoque actual se centra en adquirir experiencia práctica y expandir
+          mis habilidades en desarrollo frontend y backend. Soy una persona
+          detallista, proactiva, autodidacta y comunicativa, con una fuerte
+          motivación para convertir mis ideas en código funcional y estético.
+          Mi meta es contribuir activamente en proyectos que me permitan
+          aplicar y fortalecer mis conocimientos, mientras colaboro en equipos
+          dinámicos que me ayuden a crecer como profesional en este
+          emocionante campo tecnológico.
         </p>
-        <div class="container">
-          <div class="row g-3">
-            <div
-              class="col-12 col-sm-6 col-lg-4 proyecto d-flex justify-content-center align-items-center position-relative">
+      </article>
+    </div>
+
+    <!-- Cards -->
+    <article class="container mt-3 d-md-flex justify-content-center" role="article">
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="card text-center" style="width: 18rem; height: 25rem" aria-label="card 1">
+          <div class="card-body">
+            <i class="bi bi-laptop fs-1 text-success bg-black rounded-circle py-1 px-2" aria-label="imagen notebook"></i>
+            <h3 class="card-title">Desarrollo Web</h3>
+            <p class="card-text fs-5">
+              Me apasiona hacer sitios webs y aprender cada día más y más
+            </p>
+            <p class="badge text-bg-primary px-3 py-2">HTML</p>
+            <p class="badge text-bg-primary px-3 py-2">CSS</p>
+            <p class="badge text-bg-primary px-3 py-2">Bootstrap</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-center">
+        <div class="card text-center" style="width: 18rem; height: 25rem" aria-label="card 2">
+          <div class="card-body">
+            <i class="bi bi-laptop fs-1 text-success bg-black rounded-circle py-1 px-2" aria-label="imagen notebook"></i>
+            <h3 class="card-title">Estudiante</h3>
+            <p class="card-text fs-5">
+              Siempre estudiando y mejorando para intentar saber lo último de
+              cada tecnología
+            </p>
+            <p class="badge text-bg-primary px-3 py-2">Codo a Codo</p>
+            <p class="badge text-bg-primary px-3 py-2">Argentina Programa</p>
+            <p class="badge text-bg-primary px-3 py-2">Autodidacta</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Mis proyectos -->
+    <article id="proyectos" class="text-center" role="article">
+      <h2 class="mt-4">Mis Proyectos</h2>
+      <p class="fs-5">
+        Estos son mis proyectos, que de a poco van a ser más
+      </p>
+      <div class="container">
+        <div class="row g-3">
+          <div
+            class="col-12 col-sm-6 col-lg-4 proyecto d-flex justify-content-center align-items-center position-relative">
+            <div>
+              <img src="./img/proyecto1.png" alt="proyecto 1" class="img-fluid img-proyectos w-100 h-100 d-block" />
+            </div>
+            <div class="overlay position-absolute text-info">
+              <h4>Proyecto Bootstrap-1</h4>
               <div>
-                <img
-                  src="./img/proyecto1.png"
-                  alt="proyecto 1"
-                  class="img-fluid img-proyectos w-100 h-100 d-block" />
-              </div>
-              <div class="overlay position-absolute text-info">
-                <h4>Proyecto Bootstrap-1</h4>
-                <div>
-                  <a href="https://ana-galvez.github.io/Bootstrap-1/"
-                    target="_blank" class="text-dark"><i
-                      class="bi bi-github fs-1 text-dark"></i></a>
-                </div>
+                <a href="https://ana-galvez.github.io/Bootstrap-1/" target="_blank" class="text-dark"><i
+                    class="bi bi-github fs-1 text-dark"></i></a>
               </div>
             </div>
-            <div
-              class="col-12 col-sm-6 col-lg-4 proyecto d-flex justify-content-center align-items-center position-relative">
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-4 proyecto d-flex justify-content-center align-items-center position-relative">
+            <div>
+              <img src="./img/proyecto2.png" alt="proyecto 2" class="img-fluid img-proyectos w-100 h-100 d-block" />
+            </div>
+            <div class="overlay position-absolute text-info">
+              <h4>Lista de paquetes</h4>
               <div>
-                <img
-                  src="./img/proyecto2.png"
-                  alt="proyecto 2"
-                  class="img-fluid img-proyectos w-100 h-100 d-block" />
-              </div>
-              <div class="overlay position-absolute text-info">
-                <h4>Lista de paquetes</h4>
-                <div>
-                  <a
-                    href="https://ana-galvez.github.io/lista-de-paquetes-bootstrap/"
-                    target="_blank" class="text-dark"><i
-                      class="bi bi-github fs-1 text-dark"></i></a>
-                </div>
+                <a href="https://ana-galvez.github.io/lista-de-paquetes-bootstrap/" target="_blank" class="text-dark"><i
+                    class="bi bi-github fs-1 text-dark"></i></a>
               </div>
             </div>
-            <div
-              class="col-12 col-sm-6 col-lg-4 proyecto d-flex justify-content-center align-items-center position-relative">
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-4 proyecto d-flex justify-content-center align-items-center position-relative">
+            <div>
+              <img src="./img/proyecto3.png" alt="proyecto 3" class="img-fluid img-proyectos w-100 h-100 d-block" />
+            </div>
+            <div class="overlay position-absolute text-info">
+              <h4>Proyecto Bootstrap-1</h4>
               <div>
-                <img
-                  src="./img/proyecto3.png"
-                  alt="proyecto 3"
-                  class="img-fluid img-proyectos w-100 h-100 d-block" />
-              </div>
-              <div class="overlay position-absolute text-info">
-                <h4>Proyecto Bootstrap-1</h4>
-                <div>
-                  <a href="https://ana-galvez.github.io/Bootstrap-1/"
-                    target="_blank" class="text-dark"><i
-                      class="bi bi-github fs-1 text-dark"></i></a>
-                </div>
+                <a href="https://ana-galvez.github.io/Bootstrap-1/" target="_blank" class="text-dark"><i
+                    class="bi bi-github fs-1 text-dark"></i></a>
               </div>
             </div>
-            <div
-              class="col-12 col-sm-6 col-lg-4 proyecto d-flex justify-content-center align-items-center position-relative">
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-4 proyecto d-flex justify-content-center align-items-center position-relative">
+            <div>
+              <img src="./img/proyecto4.png" alt="proyecto 4" class="img-fluid img-proyectos w-100 h-100 d-block" />
+            </div>
+            <div class="overlay position-absolute text-info">
+              <h4>Proyecto Bootstrap-1</h4>
               <div>
-                <img
-                  src="./img/proyecto4.png"
-                  alt="proyecto 4"
-                  class="img-fluid img-proyectos w-100 h-100 d-block" />
-              </div>
-              <div class="overlay position-absolute text-info">
-                <h4>Proyecto Bootstrap-1</h4>
-                <div>
-                  <a href="https://ana-galvez.github.io/Bootstrap-1/"
-                    target="_blank" class="text-dark"><i
-                      class="bi bi-github fs-1 text-dark"></i></a>
-                </div>
+                <a href="https://ana-galvez.github.io/Bootstrap-1/" target="_blank" class="text-dark"><i
+                    class="bi bi-github fs-1 text-dark"></i></a>
               </div>
             </div>
-            <div
-              class="col-12 col-sm-6 col-lg-4 proyecto d-flex justify-content-center align-items-center position-relative">
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-4 proyecto d-flex justify-content-center align-items-center position-relative">
+            <div>
+              <img src="./img/proyecto5.png" alt="proyecto 5" class="img-fluid img-proyectos w-100 h-100 d-block" />
+            </div>
+            <div class="overlay position-absolute text-info">
+              <h4>Proyecto Bootstrap-1</h4>
               <div>
-                <img
-                  src="./img/proyecto5.png"
-                  alt="proyecto 5"
-                  class="img-fluid img-proyectos w-100 h-100 d-block" />
-              </div>
-              <div class="overlay position-absolute text-info">
-                <h4>Proyecto Bootstrap-1</h4>
-                <div>
-                  <a href="https://ana-galvez.github.io/Bootstrap-1/"
-                    target="_blank" class="text-dark"><i
-                      class="bi bi-github fs-1 text-dark"></i></a>
-                </div>
+                <a href="https://ana-galvez.github.io/Bootstrap-1/" target="_blank" class="text-dark"><i
+                    class="bi bi-github fs-1 text-dark"></i></a>
               </div>
             </div>
-            <div
-              class="col-12 col-sm-6 col-lg-4 proyecto d-flex justify-content-center align-items-center position-relative">
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-4 proyecto d-flex justify-content-center align-items-center position-relative">
+            <div>
+              <img src="./img/proyecto6.png" alt="proyecto 6" class="img-fluid img-proyectos w-100 h-100 d-block" />
+            </div>
+            <div class="overlay position-absolute text-info">
+              <h4>Proyecto Bootstrap-1</h4>
               <div>
-                <img
-                  src="./img/proyecto6.png"
-                  alt="proyecto 6"
-                  class="img-fluid img-proyectos w-100 h-100 d-block" />
-              </div>
-              <div class="overlay position-absolute text-info">
-                <h4>Proyecto Bootstrap-1</h4>
-                <div>
-                  <a href="https://ana-galvez.github.io/Bootstrap-1/"
-                    target="_blank" class="text-dark"><i
-                      class="bi bi-github fs-1 text-dark"></i></a>
-                </div>
+                <a href="https://ana-galvez.github.io/Bootstrap-1/" target="_blank" class="text-dark"><i
+                    class="bi bi-github fs-1 text-dark"></i></a>
               </div>
             </div>
           </div>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <!-- Testimonios -->
-      <article id="testimonios" class="container mb-5">
-        <h2 class="text-center mt-3">Testimonios</h2>
-        <div id="carouselExampleCaptions" class="carousel slide"
-          data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div
-                class="container d-flex flex-column justify-content-center align-items-center w-100 h-100 text-center">
-                <img
-                  src="./img/cliente1.svg"
-                  class="rounded-circle img-testimonio img-fluid"
-                  alt="cliente 1" />
-                <p class="cliente-descripcion">Trabajar con Ana ha sido una
-                  experiencia fantástica. No solo entendió perfectamente
-                  nuestras necesidades y objetivos, sino que también entregó un
-                  sitio web funcional, atractivo y optimizado a tiempo y dentro
-                  del presupuesto.</p>
-                <div class="mt-5">
-                  <h5>George Stafford</h5>
-                  <p>Gerente de AIM Tech</p>
-                </div>
+    <!-- Testimonios -->
+    <article id="testimonios" class="container mb-5" role="article">
+      <h2 class="text-center mt-3">Testimonios</h2>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" aria-label="carrousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container d-flex flex-column justify-content-center align-items-center w-100 h-100 text-center" aria-label="carrousel 1">
+              <img src="./img/cliente1.svg" class="rounded-circle img-testimonio img-fluid" alt="cliente 1" />
+              <p class="cliente-descripcion">Trabajar con Ana ha sido una
+                experiencia fantástica. No solo entendió perfectamente
+                nuestras necesidades y objetivos, sino que también entregó un
+                sitio web funcional, atractivo y optimizado a tiempo y dentro
+                del presupuesto.</p>
+              <div class="mt-5">
+                <h5>George Stafford</h5>
+                <p>Gerente de AIM Tech</p>
               </div>
             </div>
-            <div class="carousel-item">
-              <div
-                class="container d-flex flex-column justify-content-center align-items-center w-100 h-100 text-center">
-                <img
-                  src="./img/cliente2.svg"
-                  class="rounded-circle img-testimonio img-fluid"
-                  alt="cliente 2" />
-                <p class="cliente-descripcion">Su profesionalismo y habilidad
-                  técnica son insuperables. Recomiendo encarecidamente sus
-                  servicios a cualquier persona que busque un desarrollador web
-                  confiable y talentoso.</p>
-                <div class="mt-5">
-                  <h5>Magalí Britez</h5>
-                  <p>Directora de Building Company</p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div
-                class="container d-flex flex-column justify-content-center align-items-center w-100 h-100 text-center">
-                <img
-                  src="./img/cliente3.svg"
-                  class="rounded-circle img-testimonio img-fluid"
-                  alt="cliente 3" />
-                <p class="cliente-descripcion">Su atención al detalle y su
-                  capacidad para resolver problemas fueron invaluables durante
-                  todo el proceso de desarrollo.</p>
-                <div class="mt-5">
-                  <h5>David Trinchetof</h5>
-                  <p>Subgerente de My Place SRL</p>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"
-                aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon"
-                aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
-        </article>
-
-        <!-- Contacto -->
-        <section class="sector-contacto position-relative">
-          <article id="contacto"
-            class="container d-flex justify-content-center">
-            <div
-              class="container contacto-arriba text-center text-white bg-primary p-3 rounded-4 position-absolute">
-              <div class="row d-flex align-items-center">
-                <div class="col-12 col-md-4">
-                  <h5 class="fs-1">¡Hablemos!</h5>
-                </div>
-                <div class="col-12 col-md-4">
-                  <p class="contacto-descripcion fs-5">Contáctame para iniciar
-                    tu proyecto de desarrollo web y haré que tu visión se vuelva
-                    realidad.</p>
-                </div>
-                <div class="col-12 col-md-4">
-                  <a
-                    class="btn btn-primary fs-4 fw-medium border rounded-5 link-contacto"
-                    href="mailto:anamariagalvez01@gmail.com"
-                    role="button">Contacto&nbsp<i
-                      class="bi bi-envelope-check-fill"></i></a>
-                </div>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <div class="container d-flex flex-column justify-content-center align-items-center w-100 h-100 text-center" aria-label="carrousel 2">
+              <img src="./img/cliente2.svg" class="rounded-circle img-testimonio img-fluid" alt="cliente 2" />
+              <p class="cliente-descripcion">Su profesionalismo y habilidad
+                técnica son insuperables. Recomiendo encarecidamente sus
+                servicios a cualquier persona que busque un desarrollador web
+                confiable y talentoso.</p>
+              <div class="mt-5">
+                <h5>Magalí Britez</h5>
+                <p>Directora de Building Company</p>
               </div>
             </div>
-          </article>
-        </section>
-      </main>
+          </div>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <div class="container d-flex flex-column justify-content-center align-items-center w-100 h-100 text-center" aria-label="carrousel 3">
+              <img src="./img/cliente3.svg" class="rounded-circle img-testimonio img-fluid" alt="cliente 3" />
+              <p class="cliente-descripcion">Su atención al detalle y su
+                capacidad para resolver problemas fueron invaluables durante
+                todo el proceso de desarrollo.</p>
+              <div class="mt-5">
+                <h5>David Trinchetof</h5>
+                <p>Subgerente de My Place SRL</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </article>
 
-      <footer
-        class="d-flex flex-column justify-content-center align-items-center"
-        bs
-        data-bs-theme="dark">
-        <img src="./img/icono-blanco.svg" alt="icono" class="img-fluid pt-5" />
-        <p class="fs-3 mt-3">Aprendo y creo todos los días.</p>
-        <p class="fs-3 mb-5">Creemos un proyecto juntos.</p>
-        <article class="fs-1">
-          <a href="#" class="text-white"><i
-              class="bi bi-twitter pe-4"></i></a>
-          <a href="https://github.com/Ana-Galvez" target="_blank"
-            class="text-white "><i
-              class="bi bi-github pe-4"></i></a>
-          <a href="https://www.linkedin.com/in/ana-maria-galvez/" class="text-white"><i
-              class="bi bi-linkedin pe-4"></i></a>
-          <a href="#" class="text-white "><i
-              class="bi bi-instagram pe-4"></i></a>
-          <a href="mailto:anamariagalvez01@gmail.com" class="text-white "><i
-              class="bi bi-envelope pe-4"></i></a>
-        </article>
-        <p class="mt-3">Creado por Ana Galvez (2024) ©</p>
-      </footer>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    </body>
-  </html>
+    <!-- Contacto -->
+    <section class="sector-contacto position-relative">
+      <article id="contacto" class="container d-flex justify-content-center" role="article">
+        <div class="container contacto-arriba text-center text-white bg-primary p-3 rounded-4 position-absolute">
+          <div class="row d-flex align-items-center" aria-label="contacto">
+            <div class="col-12 col-md-4">
+              <h5 class="fs-1">¡Hablemos!</h5>
+            </div>
+            <div class="col-12 col-md-4">
+              <p class="contacto-descripcion fs-5">Contáctame para iniciar
+                tu proyecto de desarrollo web y haré que tu visión se vuelva
+                realidad.</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <a class="btn btn-primary fs-4 fw-medium border rounded-5 link-contacto"
+                href="mailto:anamariagalvez01@gmail.com" role="button">Contacto&nbsp<i
+                  class="bi bi-envelope-check-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="d-flex flex-column justify-content-center align-items-center" bs data-bs-theme="dark" aria-label="pie de página">
+    <img src="./img/icono-blanco.svg" alt="icono de empresa" class="img-fluid pt-5" />
+    <p class="fs-3 mt-3">Aprendo y creo todos los días.</p>
+    <p class="fs-3 mb-5">Creemos un proyecto juntos.</p>
+    <article class="fs-1">
+      <a href="#" class="text-white" role="link"><i class="bi bi-twitter pe-4" aria-label="link twitter"></i></a>
+      <a href="https://github.com/Ana-Galvez" target="_blank" class="text-white " role="link"><i class="bi bi-github pe-4" aria-label="link github"></i></a>
+      <a href="https://www.linkedin.com/in/ana-maria-galvez/" class="text-white" role="link"><i class="bi bi-linkedin pe-4" aria-label="link linkedin"></i></a>
+      <a href="#" class="text-white " role="link"><i class="bi bi-instagram pe-4" aria-label="link instagram"></i></a>
+      <a href="mailto:anamariagalvez01@gmail.com" class="text-white " role="link"><i class="bi bi-envelope pe-4" aria-label="link email"></i></a>
+    </article>
+    <p class="mt-3">Creado por Ana Galvez (2024) ©</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
